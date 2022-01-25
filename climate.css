@@ -1,0 +1,53 @@
+.content {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+  background-color: white;
+}
+.climateControll {
+  margin: 50px;
+}
+.climateControll h1 {
+  text-align: center;
+  letter-spacing: 0.7px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  cursor: default;
+}
+.climateControll p {
+  text-align: left;
+  font-size: 21px;
+  letter-spacing: 0.7px;
+  cursor: default;
+}
+p::selection {
+    background: transparent;
+}
+p::-moz-selection {
+    background: transparent;
+}
+b::selection {
+    background: transparent;
+}
+b::-moz-selection {
+    background: transparent;
+}
+h1::selection {
+    background: transparent;
+}
+h1::-moz-selection {
+    background: transparent;
+}
+@media screen and (max-width: 670px) {
+  .climateControll p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .climateControll h1 {
+    font-size: 24px;
+  }
+  .climateControll p {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,47 @@
+.content {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+  background-color: white;
+}
+.cameraSystem {
+  display: flex;
+  flex-flow: column;
+  height: 700px;
+  margin: 50px;
+}
+.cameraSystem h1 {
+  text-align: center;
+  letter-spacing: 0.7px;
+  margin-bottom: 50px;
+  cursor: default;
+  font-size: 24px;
+}
+.cameraSystem p {
+  text-align: left;
+  font-size: 25px;
+  letter-spacing: 0.7px;
+  cursor: default;
+}
+p::selection {
+    background: transparent;
+}
+p::-moz-selection {
+    background: transparent;
+}
+@media screen and (max-width: 670px) {
+  .cameraSystem h1 {
+    font-size: 22px;
+  }
+  .cameraSystem p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .cameraSystem h1 {
+    font-size: 20px;
+  }
+  .cameraSystem p {
+    font-size: 17px;
+  }
+}

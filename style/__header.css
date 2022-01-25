@@ -1,0 +1,222 @@
+body {
+	margin: auto;
+	height: 100vh;
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	background-color: rgb(216 238 252 / 62%);
+}
+.header {
+	max-width: 100%;
+	height: 80px;
+	background-color: rgb(216, 238, 252);
+	display: flex;
+	justify-content: space-around;
+}
+.headerBlocks {
+	display: flex;
+  width: 93%;
+  justify-content: space-between;
+	align-items: center;
+}
+.blockIconsLink {
+	display: flex;
+	width: 400px;
+  justify-content: space-between;
+}
+.iconLink {
+	display: flex;
+}
+.iconLink div {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.iconLink h4 {
+	font-size: 14px;
+	margin: 0;
+	cursor: default;
+}
+.iconLink p {
+	font-size: 14px;
+	margin: 0;
+}
+.iconLink a {
+	height: 32px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.iconLink img {
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+.iconLink img:hover {
+	-webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.zoom {
+  overflow: hidden;
+  -webkit-transition: all 0.8s ease;
+          transition: all 0.8s ease;
+}
+.zoom:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);  
+}
+.textLinkMedia a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+.toggle-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	background-color: rgb(216, 238, 252);
+	background-repeat: no-repeat;
+	width: 30px;
+  height: 30px;
+  margin: 0px 8px;
+  position: absolute;
+}
+.link-ease-in-out a:after {
+  background-color: rgb(31, 31, 31);
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;  
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+  width: 100%;
+}
+nav {
+	width: 100%;
+	background-color: rgb(216, 238, 252, 0.9);
+}
+nav ul {
+	display: flex; 
+	margin: 0;
+	padding: 0;
+	justify-content: space-around; 
+}
+nav ul li {
+	list-style-type: none; 
+	margin: 5px;
+}
+nav ul li:last-child {
+	padding-right: 0;
+}
+nav ul li a {
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 1;
+	cursor: pointer;
+}
+nav ul li a:hover {
+	color: rgb(31, 31, 31);
+}
+input[type=checkbox],label {
+	display:none;
+}
+@media screen and (max-width: 874px) {
+	.blockMenu a {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 772px) {
+	.headerBlocks img {
+		width: 200px;
+		height: 60px;
+	}
+}
+@media only screen and (max-width: 740px) {
+  .header {
+		height: 140px;
+	}
+	.headerBlocks {
+	  display: flex;
+	  flex-flow: column;
+	  justify-content: space-around;
+	  width: 95%;
+  }
+  .headerBlocks img{
+	  width: 180px;
+	  height: 40px;
+  }
+	.blockMenu a {
+		font-size: 14px;
+	}
+	.iconLink {
+    display: flex;
+	}
+	nav ul li a {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 670px) {
+	.headerBlocks {
+	  width: 100%;
+  }
+  input[type=checkbox] {
+  	position:absolute;
+  	top:-9999px;
+  	left:-9999px;
+  	background:none;
+  }
+	input[type=checkbox]:fous {
+		background:none;
+	}
+	label {
+		display:inline-block;
+		cursor:pointer;
+		z-index: 100;
+	}
+	input[type=checkbox]:checked ~ nav {
+		display:block;
+	}
+	nav {
+			display:none;
+			position:absolute;
+			top:125px;
+			z-index:99;
+	}
+	nav ul {
+		flex-flow: column;
+		width: 100%;
+		align-items: center;
+    position: absolute;
+    background-color: rgb(216, 238, 252, 0.97);
+	}
+	nav ul li a {
+		color: black;
+		font-size: 14px;
+		padding: 6px;
+		display: block;
+	}
+@media only screen and (max-width: 440px) {
+	.none p {
+		display: none;
+	}
+	.iconLink p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 415px) {
+	.none p {
+		display: none;
+	}
+	.blockIconsLink {
+    width: 280px;
+    padding: 5px;
+  }
+}

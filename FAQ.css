@@ -1,0 +1,96 @@
+.content {
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+.content h1 {
+	margin: 0;
+	text-align: center;
+	cursor: default;
+	font-size: 20px;
+	letter-spacing: 0.7px;
+}
+.content h3 {
+	text-align: center;
+	margin: 10px;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.centerText {
+	margin-top: 60px;
+}
+.table {
+	display: flex;
+	width: 85%;
+	margin: 0 auto;
+	cursor: default;
+}
+.table td {
+	margin: auto;
+	text-align: center;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.table th {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.blockQuestions {
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    padding: 30px;
+}
+.blockQuestions p {
+	margin: 0;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.blockQuestions h5 {
+	margin-bottom: 2px;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+@media screen and (max-width: 615px) {
+	.centerText {
+		margin-top: 65px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.content h1 {
+		font-size: 18px;
+	}
+	.content h3 {
+		font-size: 14px;
+	}
+	.table {
+		width: 95%;
+	}
+	.table td {
+		font-size: 14px;
+	}
+	.table th {
+		font-size: 14px;
+	}
+	.blockQuestions {
+	    width: 85%;
+	    padding: 20px;
+	}
+	.blockQuestions p {
+		font-size: 14px;
+	}
+	.blockQuestions h5 {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 440px) {
+	.centerText {
+		margin-top: 40px;
+	}
+}

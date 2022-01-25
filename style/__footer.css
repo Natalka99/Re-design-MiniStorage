@@ -1,0 +1,86 @@
+.footer {
+	max-width: 100%;
+	margin: auto 0 0;
+	background-color: rgb(216, 238, 252);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footerBlocks {
+	display: flex;
+	width: 95%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.blockTextIcon {
+	display: flex;
+  width: 100%;
+  margin-top: 5px;
+}
+.blockTextIcon p {
+	font-size: 14px;
+	margin: auto;
+	padding: 2px;
+	cursor: default;
+}
+.Text p {
+	font-size: 14px;
+	margin: 0;
+	cursor: default;
+}
+.blockTextIcon a {
+  margin-left: 30px;
+  width: 32px;
+}
+.blockRight {
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 772px) {
+	.footer {
+	  height: 180px;
+	}
+	.footerBlocks {
+	  display: flex;
+	  flex-flow: wrap;
+	  width: 90%;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .blockTextIcon {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  width: 100%;
+	}
+	.blockTextIcon p {
+	  margin: 0;
+	}
+}
+@media screen and (max-width: 540px) {
+	.footer {
+	  height: 260px;
+	}
+	.Text {
+		text-align: center;
+		padding-top: 10px;
+	}
+	.blockTextIcon {
+		flex-flow: wrap-reverse;
+		justify-content: normal;
+		width: 90%;
+		align-items: center;
+	}
+	.blockTextIcon p {
+		margin: auto;
+		padding: 5px;
+	}
+	.blockRight {
+		flex-flow: column;
+		margin: auto;
+	}
+	.blockTextIcon a {
+		margin-left: 0;
+	}
+}

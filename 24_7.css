@@ -1,0 +1,68 @@
+.content {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+  background-color: white;
+}
+.aroundTheClock {
+  height: 675px;
+  margin: 50px;
+}
+.aroundTheClock h1 {
+  text-align: center;
+  letter-spacing: 0.7px;
+  margin-bottom: 50px;
+  cursor: default;
+}
+h1::selection {
+    background: transparent;
+}
+h1::-moz-selection {
+    background: transparent;
+}
+.aroundTheClock p {
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  cursor: default;
+}
+.aroundTheClock a {
+  font-size: 22px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  color: black;
+}
+.aroundTheClock a:hover {
+  color: blue;
+  font-weight: bold;
+}
+p::selection {
+    background: transparent;
+}
+p::-moz-selection {
+    background: transparent;
+}
+@media screen and (max-width: 670px) {
+  .aroundTheClock h1 {
+    font-size: 28px;
+  }
+  .aroundTheClock p {
+    font-size: 20px;
+  }
+  .aroundTheClock a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .aroundTheClock h1 {
+    font-size: 24px;
+  }
+  .aroundTheClock p {
+    font-size: 17px;
+  }
+  .aroundTheClock a {
+    font-size: 17px;
+  }
+}

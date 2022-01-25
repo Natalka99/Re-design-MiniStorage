@@ -1,0 +1,63 @@
+.content {
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+.contentImg {
+	width: 70%;
+	margin: auto;
+}
+.blockText {
+	margin: 28px auto;
+}
+.blockText a {
+	color: black;
+}
+.blockText a:hover {
+	color: blue;
+}
+.blockText h2 {
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 0.7px;
+	cursor: default;
+}
+.blockText p {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	cursor: default;
+}
+p::selection {
+    background: transparent;
+}
+p::-moz-selection {
+    background: transparent;
+}
+h2::selection {
+    background: transparent;
+}
+h2::-moz-selection {
+    background: transparent;
+}
+@media only screen and (max-width: 715px) {
+  	.contentImg {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 615px) {
+	.blockText {
+	    margin: 70px auto;
+	}
+}
+@media only screen and (max-width: 440px) {
+	.blockText {
+	    margin: 35px auto;
+	}
+	.blockText p {
+     	font-size: 14px;
+    }
+    .blockText h2 {
+     	font-size: 18px;
+    }
+}
