@@ -1,2 +1,2 @@
-# redisignMiniStorage
-redisignMiniStorage
+# Re-design-MiniStorage
+re-design-MiniStorage
