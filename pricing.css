@@ -110,7 +110,7 @@
     letter-spacing: 0.7px;
 }
 .bgSizeImgFirst {
-	background-image: url('./imgs/5x5.png');
+	background-image: url('./imgs/extra_small_unit.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 250px;
@@ -121,7 +121,7 @@
 	background-image: url('./gifImgs/5x5UnitSize.gif');
 }
 .bgSizeImgSecond {
-	background-image: url('./imgs/5x10.png');
+	background-image: url('./imgs/small_unit.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 250px;
@@ -132,7 +132,7 @@
 	background-image: url('./gifImgs/5x10UnitSize.gif');
 }
 .bgSizeImgThird {
-	background-image: url('./imgs/10x10.png');
+	background-image: url('./imgs/medium_unit.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 250px;
@@ -149,7 +149,7 @@
 	justify-content: space-around;
 }
 .bgSizeImgForth {
-	background-image: url('./imgs/10x15.png');
+	background-image: url('./imgs/xl_medium_unit.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 250px;
@@ -160,7 +160,7 @@
 	background-image: url('./gifImgs/10x15UnitSize.gif');
 }
 .bgSizeImgFifth {
-	background-image: url('./imgs/10x20.png');
+	background-image: url('./imgs/big_unit.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 250px;
@@ -171,7 +171,7 @@
 	background-image: url('./gifImgs/10x20UnitSize.gif');
 }
 .bgSizeImgSixth {
-	background-image: url('./imgs/10x30.png');
+	background-image: url('./imgs/biggest_unit.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 250px;
